@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> -->
     <title>Consultation</title>
 </head>
-<body>
-    <header>
-        <h1>Tyler's Coding Services</h1>
-        <nav>
-            <ul>     
-                <li><a href = " "> Home</a></li> 
-                <li><a href = " " > About</a></li>
-                <li><a href = " "> Contact </a></li>
+<body class="bg-dark">
+    <header class= "container bg-info">
+        <h1 class="bg-dark text-white row justify-content-center">Tyler's Coding Services</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fuild">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+                <li class="nav-item"><a class="nav-link" href = "#"> Home</a></li> 
+                <li class="nav-item"><a class="nav-link" href = "#" > About</a></li>
+                <li class="nav-item"><a class="nav-link" href = "#"> Contact </a></li>
             </ul>
+            </div>
+        </div>
         </nav>
     </header>
-    <figure>
-        <figcaption><h2>No project to big or small to give me a call</h2></figcaption>
+    <figure class="container ">
+        <figcaption><h2 class="row text-white justify-content-center">No project to big or small to give me a call</h2></figcaption>
     </figure>
-    <main>
-        <section class = "a">
+
+    <main class="container bg-dark">
+        <section class = "a text-light">
             <h3>About me</h3>
             <div class = "about_me">
                 <p>I am still working on understanding css. But when it comes to logic based programming I am your guy. I taught myself python and have created a scheduling program that takes in user data and assigns employyees to the needed positions based on requested number of workers per day.</p>
@@ -30,12 +39,60 @@
             </div>
         </section>
         <section>  
-            <div>My work</div>
+            <div class="text-white">My Work</div>
         </section>
-        <section>
-            <div>Contact me</div>
+        <div class="row ">
+            <div class="col-lg-4 md-auto p-3 ">
+                <div class="card bg-info" style ="height: 65vh" >
+                    <img class="card-img-top" src="./assets/images/Generate_Pasword_demo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Password Generator</h5>
+                            <p class="card-text text-center">This site asks you for parameters and returns a password based on them.</p>
+                        </div>
+                    <div class="card-body text-center ">
+                        <a href="https://github.com/Tylaw93/wustl-Password_Generator" target="_blank" class="card-link text-light">Git repo</a>
+                        <a href="https://tylaw93.github.io/wustl-Password_Generator/"  target="_blank" class="card-link text-light">Try the Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-auto p-3">
+                <div class="card bg-info" style ="height: 65vh" >
+                    <img class="card-img-top" src="./assets/images/Weather_app_demo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Weather Lookup</h5>
+                            <p class="card-text text-center">This site returns you the weather for a city you search as well as a picture from that city.</p>
+                        </div>
+                    <div class="card-body text-center">
+                        <a href="https://github.com/Tylaw93/Weather_App" target="_blank" class="card-link text-light">Git repo</a>
+                        <a href="https://tylaw93.github.io/Weather_App/"  target="_blank" class="card-link text-light">Try the Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3">
+                <div class="card bg-info" style ="height: 65vh">
+                    <img class="card-img-top" src="./assets/images/museum_hunter_demo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Museum Hunter</h5>
+                            <p class="card-text text-center">This allows you to search a city and save museums you wish to visit.</p>
+                        </div>
+                    <div class="card-body text-center">
+                        <a href="https://github.com/Tylaw93/Travel_project" target="_blank" class="card-link text-light">Git repo</a>
+                        <a href="https://tylaw93.github.io/Travel_project/"  target="_blank" class="card-link text-light">Try the Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <section class="text-center">
+            <div class="text-white">Contact me</div>
+            <div class="text-white"><span class="badge badge-secondary">Email</span> Tylaw93@yahoo.com</div>
+            <div class="text-white"><span class="badge badge-secondary">Linkedin</span> <a href="https://www.linkedin.com/in/tyler-lawson-932589215/" target="_blank" class="card-link text-light"> Tyler-Lawson </div>
+            <div class="text-white"><span class="badge badge-secondary">Dev.to</span> <a href="https://dev.to/tylaw93" target="_blank" class="card-link text-light"> Tylaw93</div>
         </section>
     </main>
-    <footer>&#169;</footer>
+    <footer class="text-white">&#169;</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
